@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans antialiased select-none;
+  }
+}
+
+/* TipTap Editor Styles */
+.ProseMirror {
+  outline: none !important;
+  min-height: 550px;
+}
+
+.ProseMirror p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+
+.ProseMirror h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.ProseMirror h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.ProseMirror ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.ProseMirror ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Wavy / Styled Issue Underlines */
+.issue-highlight {
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 0 2px;
+  transition: all 0.15s ease-in-out;
+}
+
+.issue-grammar {
+  text-decoration: underline dotted #ef4444;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  background-color: rgba(254, 242, 242, 0.7);
+}
+.issue-grammar:hover {
+  background-color: rgba(254, 226, 226, 0.9);
+}
+
+.issue-spelling {
+  text-decoration: underline dotted #f59e0b;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  background-color: rgba(254, 243, 199, 0.7);
+}
+.issue-spelling:hover {
+  background-color: rgba(253, 230, 138, 0.9);
+}
+
+.issue-punctuation {
+  text-decoration: underline dotted #8b5cf6;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  background-color: rgba(245, 243, 255, 0.7);
+}
+
+.issue-clarity {
+  text-decoration: underline dotted #3b82f6;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  background-color: rgba(239, 246, 255, 0.7);
+}
+
+.issue-conciseness {
+  text-decoration: underline dotted #10b981;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  background-color: rgba(236, 253, 245, 0.7);
+}
+
+.issue-vocabulary {
+  text-decoration: underline dotted #ec4899;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  background-color: rgba(253, 242, 248, 0.7);
+}
